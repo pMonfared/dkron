@@ -13,4 +13,4 @@ RUN go mod download
 COPY . .
 RUN go install ./...
 
-CMD ["dkron agent --server --bootstrap-expect=1 --node-name=node1"]
+CMD ["dkron", "agent" ,"--server" ,"--bootstrap-expect=1" ,"--node-name=node1"]
